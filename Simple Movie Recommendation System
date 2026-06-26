@@ -1,0 +1,20 @@
+# Task 4: Simple Movie Recommendation System
+
+movies = {
+    "action": ["Vikram", "Master", "Leo", "Kaithi"],
+    "comedy": ["Doctor", "Don", "Boss Engira Bhaskaran"],
+    "romance": ["96", "Sita Ramam", "OK Kanmani"],
+    "thriller": ["Ratsasan", "Dhuruvangal Pathinaaru", "Thani Oruvan"]
+}
+
+print("Movie Recommendation System")
+print("Available genres: action, comedy, romance, thriller")
+
+choice = input("Enter your favorite genre: ").lower()
+
+if choice in movies:
+    print("\nRecommended Movies:")
+    for movie in movies[choice]:
+        print("-", movie)
+else:
+    print("Sorry, this genre is not available.")

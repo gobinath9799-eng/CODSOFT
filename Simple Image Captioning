@@ -1,0 +1,33 @@
+# Task 3: Simple Image Captioning
+
+import random
+
+captions = {
+    "dog": [
+        "A dog is sitting in the image.",
+        "A cute dog is looking at the camera.",
+        "A dog is playing outside."
+    ],
+    "cat": [
+        "A cat is resting peacefully.",
+        "A cat is sitting on the floor.",
+        "A cute cat is looking around."
+    ],
+    "car": [
+        "A car is parked on the road.",
+        "A vehicle is seen in the image.",
+        "A car is moving on the street."
+    ],
+    "person": [
+        "A person is standing in the picture.",
+        "A person is smiling in the image.",
+        "A person is captured by the camera."
+    ]
+}
+
+image_object = input("Enter main object in image: ").lower()
+
+if image_object in captions:
+    print("Generated Caption:", random.choice(captions[image_object]))
+else:
+    print("Generated Caption: This image contains an object or scene.")

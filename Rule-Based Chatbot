@@ -1,0 +1,24 @@
+# Task 1: Rule-Based Chatbot
+
+print("Welcome to GobiBot!")
+name = input("Enter your name: ")
+print(f"Hi {name}, I am your simple AI chatbot.")
+print("Type 'bye' to exit.\n")
+
+while True:
+    user = input("You: ").lower()
+    if "hello" in user or "hi" in user:
+        print("Bot: Hello! How can I help you?")
+    elif "name" in user:
+        print("Bot: My name is GobiBot.")
+    elif "internship" in user:
+        print("Bot: This internship helps you learn AI projects.")
+    elif "python" in user:
+        print("Bot: Python is a good language for AI.")
+    elif "help" in user:
+        print("Bot: You can ask about name, internship, or Python.")
+    elif "bye" in user or "exit" in user:
+        print(f"Bot: Bye {name}! All the best.")
+        break
+    else:
+        print("Bot: Sorry, I don't understand. Try another question.")
